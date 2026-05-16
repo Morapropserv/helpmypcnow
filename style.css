@@ -41,12 +41,18 @@ body {
   background: linear-gradient(135deg, #8b0000, #d71920);
   color: white;
   text-align: center;
-  padding: 60px 20px 45px;
+  padding: 55px 20px 40px;
 }
 
 .hero-content {
   max-width: 950px;
   margin: 0 auto;
+}
+
+.hero-logo {
+  width: 130px;
+  max-width: 40%;
+  margin-bottom: 14px;
 }
 
 .hero h1 {
@@ -218,7 +224,7 @@ h2 {
   margin: 8px 0;
 }
 
-/* REMOTE */
+/* REMOTE SUPPORT */
 
 .remote-support {
   text-align: center;
@@ -308,7 +314,12 @@ footer p {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 50px 20px 38px;
+    padding: 45px 20px 35px;
+  }
+
+  .hero-logo {
+    width: 105px;
+    max-width: 45%;
   }
 
   .hero h1 {
