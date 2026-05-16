@@ -10,7 +10,32 @@ body {
   line-height: 1.6;
 }
 
-/* HERO SECTION */
+/* FLOATING BUTTONS */
+
+.floating-text,
+.floating-call {
+  position: fixed;
+  right: 20px;
+  z-index: 999;
+  padding: 14px 20px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.floating-text {
+  bottom: 90px;
+  background: #28a745;
+}
+
+.floating-call {
+  bottom: 25px;
+  background: #b00000;
+}
+
+/* HERO */
 
 .hero {
   background: linear-gradient(135deg, #8b0000, #d71920);
@@ -74,11 +99,16 @@ body {
   color: white;
 }
 
+.btn.remote {
+  background: #0078d7;
+  color: white;
+}
+
 .btn:hover {
   opacity: 0.9;
 }
 
-/* GENERAL SECTIONS */
+/* GENERAL */
 
 section {
   max-width: 1100px;
@@ -102,7 +132,7 @@ h2 {
   font-size: 18px;
 }
 
-/* SERVICES GRID */
+/* SERVICES */
 
 .grid {
   display: grid;
@@ -127,7 +157,7 @@ h2 {
   margin-top: 0;
 }
 
-/* WHY SECTION */
+/* WHY */
 
 .why-box {
   background: white;
@@ -137,6 +167,17 @@ h2 {
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   font-size: 18px;
+}
+
+/* REMOTE */
+
+.remote-support {
+  text-align: center;
+}
+
+.note {
+  color: #b00000;
+  font-weight: bold;
 }
 
 /* FORM */
@@ -173,7 +214,6 @@ button {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 button:hover {
@@ -241,6 +281,12 @@ footer p {
   .btn {
     width: 90%;
     max-width: 320px;
+  }
+
+  .floating-text,
+  .floating-call {
+    right: 15px;
+    padding: 12px 18px;
   }
 
 }
