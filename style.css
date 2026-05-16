@@ -104,6 +104,11 @@ body {
   color: white;
 }
 
+.google-review-btn {
+  background: #28a745;
+  color: white;
+}
+
 .btn:hover {
   opacity: 0.9;
 }
@@ -155,6 +160,36 @@ h2 {
 .card h3 {
   color: #b00000;
   margin-top: 0;
+}
+
+/* REVIEWS */
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.review-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.stars {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.review-card h4 {
+  margin-top: 20px;
+  color: #b00000;
+}
+
+.review-button-wrap {
+  text-align: center;
+  margin-top: 40px;
 }
 
 /* WHY */
@@ -281,6 +316,7 @@ footer p {
   .btn {
     width: 90%;
     max-width: 320px;
+    text-align: center;
   }
 
   .floating-text,
