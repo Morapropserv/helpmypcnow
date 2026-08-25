@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,8 +14,23 @@ body {
   line-height: 1.5;
 }
 
-/* FLOATING BUTTONS */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 2000;
+  background: #fff;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
 
+.skip-link:focus {
+  top: 12px;
+}
+
+/* FLOATING BUTTONS */
 .floating-text,
 .floating-call {
   position: fixed;
@@ -27,7 +46,7 @@ body {
 
 .floating-text {
   bottom: 90px;
-  background: #28a745;
+  background: #176b2c;
 }
 
 .floating-call {
@@ -36,7 +55,6 @@ body {
 }
 
 /* HERO */
-
 .hero {
   background: linear-gradient(135deg, #8b0000, #d71920);
   color: white;
@@ -52,11 +70,13 @@ body {
 .hero-logo {
   width: 130px;
   max-width: 40%;
+  height: auto;
   margin-bottom: 14px;
 }
 
 .hero h1 {
   font-size: 56px;
+  line-height: 1.1;
   margin: 0 0 8px;
 }
 
@@ -85,7 +105,6 @@ body {
 }
 
 /* BUTTONS */
-
 .btn {
   display: inline-block;
   padding: 13px 26px;
@@ -106,20 +125,28 @@ body {
 }
 
 .btn.remote {
-  background: #0078d7;
+  background: #0069bd;
   color: white;
 }
 
 .google-review-btn {
-  background: #28a745;
+  background: #176b2c;
   color: white;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible,
+.floating-text:hover,
+.floating-call:hover,
+.floating-text:focus-visible,
+.floating-call:focus-visible {
   opacity: 0.9;
 }
 
 /* GENERAL */
+main {
+  display: block;
+}
 
 section {
   max-width: 1100px;
@@ -134,7 +161,6 @@ h2 {
 }
 
 /* INTRO */
-
 .intro p,
 .section-text {
   max-width: 850px;
@@ -144,7 +170,6 @@ h2 {
 }
 
 /* SERVICES */
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
@@ -174,7 +199,6 @@ h2 {
 }
 
 /* REVIEWS */
-
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -198,9 +222,10 @@ h2 {
   margin: 0;
 }
 
-.review-card h4 {
+.review-card .reviewer {
   margin: 16px 0 0;
   color: #b00000;
+  font-weight: bold;
 }
 
 .review-button-wrap {
@@ -209,7 +234,6 @@ h2 {
 }
 
 /* WHY */
-
 .why-box {
   background: white;
   max-width: 700px;
@@ -225,7 +249,6 @@ h2 {
 }
 
 /* REMOTE SUPPORT */
-
 .remote-support {
   text-align: center;
 }
@@ -241,7 +264,6 @@ h2 {
 }
 
 /* FORM */
-
 form {
   background: white;
   max-width: 700px;
@@ -256,9 +278,17 @@ textarea {
   width: 100%;
   padding: 14px;
   margin-bottom: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   border-radius: 8px;
   font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 2px;
 }
 
 textarea {
@@ -281,7 +311,6 @@ button:hover {
 }
 
 /* CONTACT */
-
 .contact {
   text-align: center;
 }
@@ -291,13 +320,12 @@ button:hover {
 }
 
 .contact a {
-  color: #b00000;
+  color: #8b0000;
   text-decoration: none;
   font-weight: bold;
 }
 
 /* FOOTER */
-
 footer {
   background: #222;
   color: white;
@@ -310,9 +338,7 @@ footer p {
 }
 
 /* MOBILE */
-
 @media (max-width: 768px) {
-
   .hero {
     padding: 45px 20px 35px;
   }
