@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://helpmypcnow.com/</loc>
-    <lastmod>2026-08-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://helpmypcnow.com/service-areas/</loc>
-    <lastmod>2026-08-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://helpmypcnow.com/professional-services/</loc>
-    <lastmod>2026-08-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://helpmypcnow.com/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://helpmypcnow.com/services/computer-repair/</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://helpmypcnow.com/services/virus-malware-removal/</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://helpmypcnow.com/services/compromised-computer-help/</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://helpmypcnow.com/services/new-computer-setup/</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://helpmypcnow.com/services/remote-computer-support/</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://helpmypcnow.com/service-areas/</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://helpmypcnow.com/professional-services/</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
