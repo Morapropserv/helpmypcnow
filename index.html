@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7BKQBP8V1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J7BKQBP8V1');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Computer Repair & PC Help Port St. Lucie | At Home Computer Services</title>
@@ -165,5 +174,29 @@
     <p>Computer Repair • PC Help • Port St. Lucie • Treasure Coast</p>
     <p>© 2026 At Home Computer Services. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener('click', function (event) {
+      const link = event.target.closest('a');
+      if (!link || typeof gtag !== 'function') return;
+      const href = link.getAttribute('href') || '';
+      if (href.startsWith('tel:')) {
+        gtag('event', 'phone_click', { link_url: href, link_text: link.textContent.trim() });
+      } else if (href.startsWith('sms:')) {
+        gtag('event', 'text_click', { link_url: href, link_text: link.textContent.trim() });
+      } else if (href === '#estimate') {
+        gtag('event', 'estimate_click', { link_text: link.textContent.trim() });
+      } else if (href.includes('sos.splashtop.com')) {
+        gtag('event', 'remote_support_click', { link_url: href, link_text: link.textContent.trim() });
+      }
+    });
+    document.querySelectorAll('form[action*="formspree.io"]').forEach(function (form) {
+      form.addEventListener('submit', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', { form_name: 'free_estimate' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
